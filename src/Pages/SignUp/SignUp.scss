@@ -1,6 +1,7 @@
 .signup{
     background-color: whitesmoke;
     height: 100vh;
+
     .logoDiv{
         max-width: 200px;
         padding: 1.5rem 0 0 3rem;
@@ -15,9 +16,9 @@
     }
 
     h1{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-align: center;
-        font-weight: 500;
+        font-weight: 300;
         margin-top: 2rem;
         margin-bottom: 1.2rem;
     }
@@ -32,6 +33,7 @@
         }
     }
 
+    // for screen lesser than 1200px
     @media screen and (max-width:1200px) {
         .logoDiv{
             padding: 0;
@@ -49,15 +51,8 @@
 }
 
 .form-col{
-    // border: 1px solid white;
-    // background-color: white;
-    // width: 40%;
     max-width: 70%;
     margin: 0 auto;
-    // padding: 20px;
-    // box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    // border-radius: 10px;
-
 
     h6{
         font-size: 1.2rem;
@@ -66,9 +61,6 @@
         margin-bottom: 4rem;
         color: rgba(0,0,0,0.7);
 
-    }
-    span{
-        color: #0a66c2;
     }
 
     form{
@@ -81,10 +73,24 @@
             margin-bottom: 10px;
         }
         input{
-            // width: 80%;
             padding: 0.6rem 0;
             margin-bottom: 15px;
             border-radius: 5px;
+            width: 100%;
+        }
+
+        .password{
+            position: relative;
+
+            .hide{
+                position: absolute;
+                right: 12px;
+                top: 12px;
+                cursor: pointer;
+                font-weight: 200;
+                font-size: 0.9rem;
+                color: rgba(0,0,0,0.7);
+            }
         }
 
         .p-text{
@@ -95,7 +101,6 @@
 
         }
         span{
-            color: #0a66c2;
             font-size: 0.8rem;
         }
     
@@ -139,6 +144,7 @@
 
     }
 
+    // for screen greater than 1200px
     @media screen and (min-width:1200px) {
         border: 1px solid white;
         background-color: white;
@@ -172,6 +178,7 @@
         
     }
 
+    // for screen less than 800px
     @media screen and (max-width: 800px) {
         max-width: 90%;
 
